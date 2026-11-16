@@ -31,8 +31,6 @@ h1 {
     color: #3e254a;
 }
 
-/* FORMULÁRIO */
-
 form {
     display: flex;
     flex-direction: column;
@@ -69,8 +67,6 @@ select:focus {
     box-shadow: 0 0 4px rgba(46, 21, 43, 0.3);
 }
 
-/* BOTÕES */
-
 button {
     padding: 10px 15px;
     font-size: 15px;
@@ -99,8 +95,6 @@ button {
     background-color: #b91c1c;
 }
 
-/* MENSAGENS INLINE */
-
 .mensagem {
     padding: 12px;
     margin-bottom: 15px;
@@ -121,13 +115,9 @@ button {
     border: 1px solid #badbcc;
 }
 
-/* PESQUISA */
-
 .pesquisa {
     margin-bottom: 20px;
 }
-
-/* ORDENAÇÃO V6 */
 
 .ordenacao {
     margin-bottom: 20px;
@@ -136,8 +126,6 @@ button {
 .ordenacao select {
     cursor: pointer;
 }
-
-/* GERENCIAMENTO DE ARQUIVOS V6 */
 
 .arquivos-container {
     background-color: #b99fbd;
@@ -169,8 +157,6 @@ button {
     margin-top: 10px;
 }
 
-/* RESUMO DO ESTOQUE */
-
 .resumo-container {
     display: flex;
     justify-content: space-between;
@@ -186,8 +172,6 @@ button {
     color: #3a1745;
     font-weight: bold;
 }
-
-/* TABELA */
 
 .tabela-container {
     width: 100%;
@@ -217,8 +201,6 @@ tbody tr:nth-child(even) {
     background-color: #d7b8d8;
 }
 
-/* DESTAQUE DE ESTOQUE CRÍTICO V6 */
-
 .estoque-critico {
     background-color: #f8d7da !important;
     color: #842029;
@@ -236,8 +218,6 @@ tbody tr:nth-child(even) {
     margin-left: 5px;
 }
 
-/* BOTÃO REMOVER */
-
 .btn-remover {
     background-color: #5f335f;
     color: white;
@@ -250,16 +230,12 @@ tbody tr:nth-child(even) {
     background-color: #ab093c;
 }
 
-/* MENSAGEM DE TABELA VAZIA */
-
 .mensagem-vazia {
     text-align: center;
     color: #2f1734;
     font-style: italic;
     margin: 15px 0;
 }
-
-/* BOTÃO BOOTSTRAP */
 
 .bootstrap-container {
     margin-top: 25px;
@@ -275,8 +251,6 @@ tbody tr:nth-child(even) {
 .btn-bootstrap:hover {
     background-color: #321b40;
 }
-
-/* MODAIS */
 
 .modal {
     position: fixed;
@@ -344,8 +318,6 @@ tbody tr:nth-child(even) {
     background-color: #8f1010;
 }
 
-/* MODAL BOOTSTRAP */
-
 .modal-bootstrap-conteudo {
     text-align: left;
 }
@@ -369,8 +341,6 @@ tbody tr:nth-child(even) {
     margin: 0 auto;
 }
 
-/* ANIMAÇÃO */
-
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -382,8 +352,6 @@ tbody tr:nth-child(even) {
         transform: scale(1);
     }
 }
-
-/* RESPONSIVIDADE */
 
 @media (max-width: 600px) {
 
