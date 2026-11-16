@@ -1,6 +1,4 @@
 
-/* CONFIGURAÇÕES GERAIS */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -53,15 +51,19 @@ label {
     font-size: 14px;
 }
 
-input {
+input,
+select {
     padding: 10px;
     border: 1px solid #512f57;
     border-radius: 4px;
     font-size: 16px;
     width: 100%;
+    background-color: #ffffff;
+    color: #2e152b;
 }
 
-input:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: #000000;
     box-shadow: 0 0 4px rgba(46, 21, 43, 0.3);
@@ -97,7 +99,7 @@ button {
     background-color: #b91c1c;
 }
 
-/* MENSAGENS INLINE V5 */
+/* MENSAGENS INLINE */
 
 .mensagem {
     padding: 12px;
@@ -123,6 +125,48 @@ button {
 
 .pesquisa {
     margin-bottom: 20px;
+}
+
+/* ORDENAÇÃO V6 */
+
+.ordenacao {
+    margin-bottom: 20px;
+}
+
+.ordenacao select {
+    cursor: pointer;
+}
+
+/* GERENCIAMENTO DE ARQUIVOS V6 */
+
+.arquivos-container {
+    background-color: #b99fbd;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #684973;
+}
+
+.arquivos-container h3 {
+    color: #3e254a;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.botoes-arquivos {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.botoes-arquivos button {
+    flex: 1;
+    min-width: 150px;
+}
+
+.importar {
+    margin-top: 10px;
 }
 
 /* RESUMO DO ESTOQUE */
@@ -157,7 +201,8 @@ table {
     background-color: #eadbea;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #3e2c43;
     padding: 10px;
     text-align: center;
@@ -171,6 +216,27 @@ th {
 tbody tr:nth-child(even) {
     background-color: #d7b8d8;
 }
+
+/* DESTAQUE DE ESTOQUE CRÍTICO V6 */
+
+.estoque-critico {
+    background-color: #f8d7da !important;
+    color: #842029;
+    font-weight: bold;
+}
+
+.aviso-estoque {
+    display: inline-block;
+    background-color: #b91c1c;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* BOTÃO REMOVER */
 
 .btn-remover {
     background-color: #5f335f;
@@ -210,7 +276,7 @@ tbody tr:nth-child(even) {
     background-color: #321b40;
 }
 
-/* MODAIS V5 */
+/* MODAIS */
 
 .modal {
     position: fixed;
@@ -339,7 +405,16 @@ tbody tr:nth-child(even) {
         font-size: 16px;
     }
 
-    th, td {
+    .botoes-arquivos {
+        flex-direction: column;
+    }
+
+    .botoes-arquivos button {
+        width: 100%;
+    }
+
+    th,
+    td {
         padding: 7px;
         font-size: 12px;
     }
